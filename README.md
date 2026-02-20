@@ -14,6 +14,7 @@ The following tools and technologies are used in this repository:
   Core programming language for data engineering practice.
 
   python --version
+  
   pip --version
 
 - **Visual Studio Code (VS Code)**  
