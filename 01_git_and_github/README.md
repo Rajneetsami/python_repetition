@@ -1,6 +1,11 @@
 # 📘 Git & GitHub Notes
 
 ---
+I created a **local repository** on my computer to practice Git commands.  
+I also pushed this repository to **GitHub**, so you can see the demo there:  
+
+**GitHub Repo:** (https://github.com/Rajneetsami/localrepo.git)
+**Note:** The `index.html` file includes a link to a YouTube video.
 
 ## 🔹 What is Git?
 
