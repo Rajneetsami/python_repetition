@@ -66,38 +66,46 @@ git config --global user.email "email@example.com"
 git config --list
 
 # 🔹 Start a Repository
-git init
+git init                     # initialize repo
 
-git clone <repository-url>
+git remote add origin <-link of repo->  # connect local repo to github
+
+git clone <repository-url>   # clone existing repo
 
 # 🔹 Basic Workflow
-git status
+git status                   # check current status
 
-git add .
+git add .                    # add all files
 
-git commit -m "Your message"
+git add <-file name>         # add specific file
 
-git log
+git commit -m "Your message" # commit changes
+
+git log # show commit history
 
 # 🔹 Working with Remote (GitHub)
-git remote -v
+git remote -v                # verify remote
 
-git push origin main
+git push origin main         # push to github
 
-git pull origin main
+git pull origin main         # pull latest changes
 
-git push -u origin main
+git push -u origin main      # Set upstream (future push: just git push)
 
 # 🔹 Branching
-git branch
+git branch                    # List branches
 
-git checkout -b new-branch
+git checkout -b new-branch    # Create & switch branch
 
-git checkout main
+git checkout main             # Switch branch
 
-git branch -d branch-name
+git branch -d branch-name     # Delete branch
 
-git merge branch-name
+git merge branch-name         # Merge branch
+
+git branch -M main            # Rename branch
+
+
 
 # 🔹 Comparing Changes
 git diff
@@ -105,11 +113,28 @@ git diff
 git diff branch-name
 
 # 🔹 Reset Commands (Use Carefully ⚠️)
+
+# unstage changes : 
+
+Used when:
+
+Changes are added (staged)
+
+But NOT committed yet
+
+You want them back to "modified"
+
 git reset file-name
 
 git reset
 
+git restore file-name
+
+# undo last commit
+
 git reset HEAD~1
+
+# undo multiple commits
 
 git reset <commit-hash>
 
@@ -118,3 +143,28 @@ git reset --hard <commit-hash>
 ⚠️ Warning:
 --hard removes commits and changes permanently.
 Use it carefully.
+
+
+# abbrevation
+
+IDE = integrated development environment
+M = modified
+U = untracked files
+m = message
+PR = pull request
+
+# merge conflicts
+
+An event that takes place when git is unable to automatically resolve differences in a code between two commits.
+
+# 📌 File States in Git
+
+State	    Meaning
+
+Untracked	New file not added yet
+
+Modified	File changed
+
+Staged	    File added and ready to commit
+
+Unmodified	No changes
