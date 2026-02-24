@@ -61,3 +61,4 @@ uv pip install -r requirements.txt
 ## Folder Structure
  - 00_intro
  - 01_git_and_github
+ - Excercise
