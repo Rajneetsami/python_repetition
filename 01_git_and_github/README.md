@@ -80,7 +80,9 @@ git clone <repository-url>   # clone existing repo
 # 🔹 Basic Workflow
 git status                   # check current status
 
-git add .                    # add all files
+git add .                    # Add all changes (new + modified files) in the current directory and its subdirectories
+
+git add -A                   # Stage all changes everywhere in the repo
 
 git add <-file name>         # add specific file
 
@@ -145,6 +147,17 @@ git reset <commit-hash>
 
 git reset --hard <commit-hash>
 
+# remove directory/files
+
+git rm -r --cached folder name ( becomes untracked files but still store in the local repo )
+
+git rm -r folder name
+
+git rm file name
+
+git rm --cached file name
+
+
 ⚠️ Warning:
 --hard removes commits and changes permanently.
 Use it carefully.
@@ -173,3 +186,16 @@ Modified	File changed
 Staged	    File added and ready to commit
 
 Unmodified	No changes
+
+
+# renmaing folder : (case insenstive/ case sensitive)
+
+git mv old_folder_name temp_folder
+
+git commit -m "message"
+
+git move temp_folder new_folder_name
+
+git commit -m "message"
+
+git push origin main
