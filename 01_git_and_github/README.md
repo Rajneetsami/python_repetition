@@ -166,9 +166,13 @@ Use it carefully.
 # abbrevation
 
 IDE = integrated development environment
+
 M = modified
+
 U = untracked files
+
 m = message
+
 PR = pull request
 
 # merge conflicts
