@@ -35,9 +35,9 @@ Fill in this table either by copying this into your own markdown file or copy it
 | gitignore       | A file that tells Git which files or folders should not be tracked or committed to the repository.|
 | commit          | A snapshot of changes made to files in a repository, saved with a descriptive message.|
 | pull            | A Git command used to fetch and merge changes from a remote repository into your local repository.|
-| clone           |A Git command used to create a copy of a remote repository on your local machine.|
-| cd              |A command-line instruction meaning "change directory," used to navigate between folders. |
-| ls              |A command-line instruction used to list files and directories in the current folder.|
-| cd ..           |A command-line instruction used to move one level up to the parent directory.|
+| clone           | A Git command used to create a copy of a remote repository on your local machine.|
+| cd              | A command-line instruction meaning "change directory," used to navigate between folders. |
+| ls              | A command-line instruction used to list files and directories in the current folder.|
+| cd ..           | A command-line instruction used to move one level up to the parent directory.|
 |                 |             |
 |                 |             |
